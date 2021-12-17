@@ -18,6 +18,7 @@
             <p>
                 @p.Description
             </p>
+            <img src="@p.PathToImg" />
             @using (Html.BeginForm("AddToCart", "Cart"))
             {
                 @Html.Hidden("productId", p.Id)
